@@ -5,6 +5,7 @@
     var isFixed, jade2html, navTop, update;
     var input  = $('#input');
     var output = $('#output');
+    var result = $('#result')
     var textareas = $('textarea');
 
     // Function for compiling the Jade markup.
@@ -28,6 +29,7 @@
         output.val('[jade] ' + error.message).addClass('error');
         return;
       }
+      result.html(html);
       return output.val(html.trim());
     };
 
