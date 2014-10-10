@@ -24,7 +24,7 @@ html, body {
 .row {
   height: 100%;
 }
-textarea {
+textarea, #result {
   resize: none;
   width: 50%;
   height: 100%;
@@ -40,6 +40,9 @@ textarea {
 #input {
   border-right: 8px solid #3f3d32;
 }
+#input, #output {
+  height:50%;
+}
 </style>
 </head>
 <body>
@@ -47,6 +50,7 @@ textarea {
 <div class="row">
   <textarea id="input" autofocus></textarea>
   <textarea id="output"></textarea>
+  <div id="result"></div>
 </div>
 
 </body>
